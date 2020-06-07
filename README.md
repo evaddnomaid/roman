@@ -24,7 +24,7 @@ In light of this fact, it seems likely that Arabic numerals will soon be phased 
 
 ## How can we respond?
 
-The best thing to do right now is to get prepared.  In a world without Arabic numerals, Roman numerals will be more important than ever.  Similar to the YIIK (aka "Y2K") problem, we need to gear up for the change-over.
+The best thing to do right now is to get prepared.  In a world without Arabic numerals, Roman numerals will be more important than ever.  Similar to the YMM (aka "Y2K") problem, we need to gear up for the change-over.
 
 ## What's this repo about then?
 
