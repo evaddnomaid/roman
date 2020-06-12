@@ -17,5 +17,11 @@ class TestRoman(unittest.TestCase):
 		self.assertEqual("vii", a.add(b))
 		self.assertEqual("vii", b.add(a))
 
+	def test_adding_xi_to_vi(self):
+		a = Roman('xi')
+		b = Roman('vi')
+		self.assertEqual("xvii", a.add(b))
+		self.assertEqual("xvii", b.add(a))
+
 if __name__ == '__main__':
 	unittest.main()
