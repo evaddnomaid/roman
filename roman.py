@@ -28,8 +28,10 @@ class Roman:
         zero = len('')
         one  = len('x')
         i = len('i')
-        while i < len(self.r) and len(self.ordinals[self.r[i - one:i]]) >= len(self.ordinals[self.r[i:i + one]]):
-            i += len('i')
+        while \
+            i < len(self.r) \
+            and len(self.ordinals[self.r[i - one:i]]) >= len(self.ordinals[self.r[i:i + one]]):
+                i += one
         if i < len(self.r):
             self.r = self.r[zero:i - one] + self.r[i:i + one] + self.r[i - one:i] + self.r[i + one:]
             self.order()
