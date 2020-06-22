@@ -25,10 +25,12 @@ class Roman:
         """
         Sorts input roman characters based on corresponding self.ordinals value
         """
+        zero = len('')
+        one  = len('x')
         i = len('i')
-        while i < len(self.r) and len(self.ordinals[self.r[i - 1:i]]) >= len(self.ordinals[self.r[i:i +1]]):
+        while i < len(self.r) and len(self.ordinals[self.r[i - one:i]]) >= len(self.ordinals[self.r[i:i + one]]):
             i += len('i')
         if i < len(self.r):
-            self.r = self.r[0:i-1] + self.r[i:i+1] + self.r[i-1:i] + self.r[i+1:]
+            self.r = self.r[zero:i - one] + self.r[i:i + one] + self.r[i - one:i] + self.r[i + one:]
             self.order()
 
