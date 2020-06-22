@@ -11,10 +11,11 @@ class Roman:
         else:
             self.r = ''
 
-    def roman_numeral(self):
+    def __repr__(self):
         return self.r
 
     def add(self, x):
+        """ Add this roman numeral to another (x) """
         result = Roman(self.r)
         result.r = self.r + x.r
         result.order()
